@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+{{outflow.product}}
+{% endblock title %}
+{% block content %}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <h3 class="display-6">
+                Detalhes da Saida
+            </h3>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">{{outflow.product}}</h3>
+            <p class="card-text">
+                Quantidade: <strong>{{outflow.quantity}}</strong>
+            </p>
+            <p class="card-text">
+                {{outflow.description}}
+            </p>
+            <p class="card-text float-end">{{outflow.created_at}}</p>
+        </div>
+    </div>
+    <a href="{% url 'outflows:list' %}" class="btn btn-secondary mt-4">Voltar para a lista de categorias</a>
+</div>
+
+{% endblock content %}

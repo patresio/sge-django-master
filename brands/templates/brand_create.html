@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}SGE - Marca{% endblock title %}
+{% block content %}
+<div class="container mt-4">
+    <h3 class="display-6">Cadastrar Marca</h3>
+    <div class="card">
+        <div class="card-body">
+            <form method="post" class="form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Salvar Marca</button>
+            </form>
+        </div>
+    </div>
+    <a href="{% url 'brands:list' %}" class="btn btn-secondary mt-4">Cancelar e Voltar para a Lista de Marcas</a>
+</div>
+{% endblock content %}

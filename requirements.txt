@@ -1,0 +1,8 @@
+django
+python-decouple
+dj-database-url
+dj-static
+google-generativeai
+djangorestframework
+djangorestframework-simplejwt 
+requests

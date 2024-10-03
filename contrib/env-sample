@@ -1,0 +1,19 @@
+# Configuraion for setting django
+SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET # in debug mode
+DEBUG=True # False only deploy
+ALLOWED_HOSTS=127.0.0.1, * # Hosts to deploy, not utilization in production '*' for security
+GOOGLE_API_KEY=
+# Configuration for database
+# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+# URL for database
+DATABASE_URL="sqlite:///db.sqlite3"
+
+
+# Configuration for send email
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+EMAIL_HOST=localhost
+EMAIL_PORT=25
+EMAIL_USE_TLS=
+EMAIL_USE_SSL=
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=

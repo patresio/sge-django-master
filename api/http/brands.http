@@ -1,0 +1,26 @@
+@hostname = 127.0.0.1
+@port = 8000
+
+
+###
+# @name createToken
+POST http://{{ hostname }}:{{ port }}/api/v1/token/
+Content-Type: application/json
+
+{
+    "username": "patrese",
+    "password": "1234"
+}
+
+
+###
+GET http://{{ hostname }}:{{ port }}/api/v1/brands/
+Authorization: Bearer {{ createToken.response.body.access }}
+
+###
+POST http://{{ hostname }}:{{ port }}/api/v1/brands
+Content-Type: application/json
+
+{
+    "name": "Masterprint"
+}
