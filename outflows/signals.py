@@ -24,8 +24,8 @@ def send_webhook_create_outflow(sender, instance, created, **kwargs):
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "outflow": instance.id,
         "product": instance.product.title,
-        "product_selling_price": float  (instance.product.selling_price),
+        "product_selling_price": float(instance.product.selling_price),
         "quantity": instance.quantity,
     }
 
-    notify.send_event(data)
+    notify.send_order_event(data)

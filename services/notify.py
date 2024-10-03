@@ -3,10 +3,10 @@ import requests
 
 class Notify:
     def __init__(self):
-        self.__base_url = "https://webhook-test.com"
+        self.__base_url = "http://127.0.0.1:8001"
 
-    def send_event(self, data):
+    def send_order_event(self, data):
         requests.post(
-            url=f"{self.__base_url}/9c45f50acbd3ed07b68ea434365bcf9c",
+            url=f"{self.__base_url}/api/v1/webhooks/order/",
             json=data,
         )
