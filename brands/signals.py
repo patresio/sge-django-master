@@ -2,7 +2,7 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
 from brands.models import Brand
-from gemini_api.client import get_brand_description
+from services.gemini import get_brand_description
 
 
 @receiver(pre_save, sender=Brand)
