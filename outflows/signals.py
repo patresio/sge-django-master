@@ -20,11 +20,13 @@ def send_webhook_create_outflow(sender, instance, created, **kwargs):
     notify = Notify()
 
     data = {
+        "system": "SGE",
         "event_type": "create_outflow",
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "outflow": instance.id,
         "product": instance.product.title,
         "product_selling_price": float(instance.product.selling_price),
+        "product_cost_price": float(instance.product.cost_price),
         "quantity": instance.quantity,
     }
 
