@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 {% block title %}SGE - HOME{% endblock title %}
 {% block content %}
-    {% include "components/_product_metrics.html" %}
+
+    {% include "components/_ai_result.html" %}
+
+    {% if perms.products.view_products and perms.inflows.view_inflows %}
+      {% include "components/_product_metrics.html" %}
+    {% endif %}
+
     {% include "components/_sales_metrics.html" %}
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

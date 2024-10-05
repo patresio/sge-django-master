@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "products",
     "inflows",
     "outflows",
+    "ai",
 ]
 
 LOGIN_URL = "authentication:login"
@@ -155,3 +156,7 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
 }
+
+
+GOOGLE_API_KEY = config("GOOGLE_API_KEY")
+GOOGLE_MODEL_ID = config("GOOGLE_MODEL_ID", default="gemini-1.5-flash")
