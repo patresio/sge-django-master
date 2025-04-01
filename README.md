@@ -95,8 +95,6 @@ O Sistema de Gestão de Estoque é a solução ideal para empresas de todos os p
     * Conexão com vendas e logística.
 
 ![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/2.jpg)
-![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/3.jpg)
-![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/4.jpg)
 
 ## 💎 Links úteis 💎
 
