@@ -48,13 +48,13 @@ O Sistema de Gestão de Estoque é a solução ideal para empresas de todos os p
 1. Clone este repositório:
 
    ```sh
-   git clone https://github.com/patresio/todo-list-app
+   git clone https://github.com/patresio/sge-django-master
    ```
 
 2. Acesse o diretório do projeto:
 
    ```sh
-   cd campo-minado
+   cd sge-django-master
    ```
 
 3. Instale uma Virtual Env do Python e ative:
