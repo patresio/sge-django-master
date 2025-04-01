@@ -1,7 +1,7 @@
 # 📦 Sistema de Gestão de Estoque: Controle Total na Palma da Sua Mão 📦
 
 <div align="center">
-<img src="https://github.com/patresio/sge-django-master/raw/main/.gitassets/capa.png" width="350" />
+<img src="https://github.com/patresio/sge-django-master/raw/master/.gitassets/capa.png" width="350" />
 
 <div data-badges>
     <img src="https://img.shields.io/github/stars/patresio/sge-django-master?style=for-the-badge" alt="GitHub stars" />
@@ -94,9 +94,9 @@ O Sistema de Gestão de Estoque é a solução ideal para empresas de todos os p
 * **Integração com Outros Sistemas:**
     * Conexão com vendas e logística.
 
-![](https://github.com/patresio/todo-list-app/raw/main/.gitassets/2.jpg)
-![](https://github.com/patresio/todo-list-app/raw/main/.gitassets/3.jpg)
-![](https://github.com/patresio/todo-list-app/raw/main/.gitassets/4.jpg)
+![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/2.jpg)
+![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/3.jpg)
+![](https://github.com/patresio/todo-list-app/raw/master/.gitassets/4.jpg)
 
 ## 💎 Links úteis 💎
 
